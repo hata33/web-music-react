@@ -1,7 +1,7 @@
 import request from './request';
 
 export function getTopBanners() {
-  return requers({
+  return request({
     url: "/banner"
   })
 }

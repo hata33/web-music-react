@@ -13,13 +13,13 @@ import {
 export default memo(function Discover(props) {
   console.log(props);
 
-  useEffect(() => {
-    request({
-      url: "/banner"
-    }).then( res => {
-      console.log(res);
-    })
-  })
+  // useEffect(() => {
+  //   request({
+  //     url: "/banner"
+  //   }).then( res => {
+  //     console.log(res);
+  //   })
+  // })
 
   const { route } = props;
   return (
@@ -37,7 +37,6 @@ export default memo(function Discover(props) {
           }
         </TopMenu>
       </div>
-      123
       {renderRoutes(route.routes)}
     </DiscoverWrapper>
   )

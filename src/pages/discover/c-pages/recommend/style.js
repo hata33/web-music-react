@@ -12,3 +12,7 @@ export const Content = styled.div`
 export const RecommentLeft = styled.div`
 
 `
+
+export const RecommentRight = styled.div`
+
+`

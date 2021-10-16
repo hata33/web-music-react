@@ -27,7 +27,7 @@ function Recommend(props) {
   // 派发action
   useEffect(() => {
     // 直接派发这个action
-    dispatch(getTopBannerAction());
+        dispatch(getTopBannerAction());
   }, [dispatch]);
 
   return (

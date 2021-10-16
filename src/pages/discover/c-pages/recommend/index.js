@@ -17,10 +17,11 @@ function Recommend(props) {
   // 组件redux关联： 获取数据和进行操作
   // 第一个参数是回调函数state，要求有一个返回值，作为useSelector的返回值
 
-  // 获取redux 中存储的state
+  // 获取redux 中存储的state 可能影响性能 
+  // connect可能进行性能优化 
   const { topBanners } = useSelector(state => ({
     topBanners : state.recommend.topBanners
-  }))
+  }), shallowEqual)
   // 返回Redux store中对dispatch函数的引用。直接获取dispacth对象
   const dispatch = useDispatch();
   

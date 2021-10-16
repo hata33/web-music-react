@@ -1,6 +1,7 @@
-import * as actionTypes from './constants'
+import { Map } from 'immutable';
+import * as actionTypes from './constants';
 
-const defaultState = ({
+const defaultState = Map({
   topBanners: []
 })
 
@@ -8,7 +9,9 @@ const defaultState = ({
 function reducer(state = defaultState , action) {
   switch(action.type) {
     case actionTypes.CHANGE_TOP_BANNERS:
-      return {...state, topBanners: action.topBanners};
+      // return {...state, topBanners: action.topBanners};
+      // 此处返回的是一个新的对象
+      return state.set("topBanners", action.topBanners);
     default:
       return state;
   }

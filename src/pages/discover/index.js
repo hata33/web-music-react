@@ -1,8 +1,7 @@
-import React, { memo, useEffect } from 'react';
+import React, { memo } from 'react';
 import { renderRoutes } from 'react-router-config';
 
 import { discoverMenu } from '@/common/local-data';
-import request from '@/services/request'
 
 import { NavLink } from 'react-router-dom';
 import {

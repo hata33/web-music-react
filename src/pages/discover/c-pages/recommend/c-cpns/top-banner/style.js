@@ -24,6 +24,13 @@ export const BannerLeft = styled.div`
       height: 100%;
     }
   }
+  /* .ant-carousel .slick-dots li button{
+    display:block;
+    background: url(${btn}) no-repeat 0 9999px;
+    width:20px;
+    height: 20px;
+    background-position: -16px -346px;
+  } */
 
 `
 

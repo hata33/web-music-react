@@ -26,6 +26,8 @@ export default memo(function TopBanner() {
         dispatch(getTopBannerAction());
   }, [dispatch]);
 
+  
+  // 使用useCallback 专门用来缓存函数的 hooks 会有记忆功能，指向同一个引用。
   const bannerChange = useCallback((from, to) => {
     // setTimeout(() => {
       setCurrentIndex(to);

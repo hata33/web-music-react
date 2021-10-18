@@ -29,4 +29,14 @@ const ThemeHeaderRCM = memo(function(props) {
     </HeaderWrapper>
   )
 })
+
+ThemeHeaderRCM.PorpTypes = {
+  title: PropTypes.string.isRequired,
+  keywords: PropTypes.array
+}
+
+ThemeHeaderRCM.defaultProps = {
+  keywords: []
+}
+
 export default ThemeHeaderRCM
